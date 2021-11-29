@@ -1,7 +1,12 @@
+const { fontFamily } = require('tailwindcss/defaultTheme')
+
 module.exports = {
   purge: [],
   darkMode: false, // or 'media' or 'class'
   theme: {
+    fontFamily: {
+      sans: ['Inter', ...fontFamily.sans]
+    },
     colors: {
       accents: {
         1: '#E7E9E9',
@@ -15,6 +20,11 @@ module.exports = {
     },
     extend: {
       width: {
+        300: '300px',
+        350: '350px',
+        400: '400px'
+      },
+      maxWidth: {
         300: '300px',
         350: '350px',
         400: '400px'
