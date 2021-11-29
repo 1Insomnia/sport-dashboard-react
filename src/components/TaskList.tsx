@@ -11,7 +11,7 @@ const TaskList = ({ list }: { list: ITask[] }) => {
   return (
     <section>
       <h2 className="text-xl font-bold tracking-tight mb-5">Daily Tasks</h2>
-      <div className="flex flex-col gap-4">
+      <div className="flex flex-col gap-4 lg:flex-row">
         {list.map((task, index) => (
           <TaskCard {...task} key={index} />
         ))}
