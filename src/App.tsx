@@ -7,6 +7,7 @@ import SideNav from './components/SideNav'
 // Molecules
 import TaskList from './components/TaskList'
 import Profile from './components/Profile'
+import GoalCard from './components/GoalCard'
 
 interface ITask {
   title: string
@@ -20,6 +21,11 @@ interface IProfile {
   weight: number
   height: number
   age: number
+}
+
+interface IGoal {
+  title: string
+  content: string
 }
 
 const list: ITask[] = [
@@ -55,6 +61,7 @@ const App = () => {
       <SideNav />
       <Main>
         <Profile {...profile} />
+        <GoalCard title="Loose weight" content="ok ok ok" />
         <TaskList list={list} />
       </Main>
     </div>

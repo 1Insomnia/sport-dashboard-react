@@ -8,10 +8,7 @@ interface ITask {
 
 const TaskCard = ({ title, duration, icon }: ITask) => {
   return (
-    <div
-      className="relative px-4 py-6 shadow-md bg-accents-1 rounded"
-      style={{ minWidth: '200px' }}
-    >
+    <div className="relative px-10 py-6 shadow-md bg-accents-1 rounded-md max-w-400">
       <button className="absolute top-2 right-2">
         <FiMoreHorizontal className="w-4 h-4" />
       </button>

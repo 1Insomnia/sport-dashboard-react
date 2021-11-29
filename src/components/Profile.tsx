@@ -8,7 +8,7 @@ interface IProfile {
 
 const Profile = ({ image, name, weight, height, age }: IProfile) => {
   return (
-    <div className="p-4 rounded shadow-md mb-10">
+    <div className="p-4 rounded-mdrounded-md shadow-md mb-10 max-w-400">
       <div>
         <img
           src={image}
